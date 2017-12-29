@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="482.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controllers.ViewController">
+   <children>
+      <ListView fx:id="presentsList" layoutX="22.0" layoutY="14.0" prefHeight="375.0" prefWidth="290.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="35.0" />
+      <TextField fx:id="presentNameField" layoutX="328.0" layoutY="284.0" prefHeight="27.0" prefWidth="262.0" promptText="Present name" AnchorPane.leftAnchor="328.0" />
+      <TextField fx:id="sweetNameField" layoutX="330.0" layoutY="228.0" promptText="Sweet name" AnchorPane.rightAnchor="102.0" />
+      <Button fx:id="createPresentButton" layoutX="405.0" layoutY="359.0" mnemonicParsing="false" onAction="#createPresent" text="Create present" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="85.0" />
+      <Button fx:id="addSweetButton" layoutX="506.0" layoutY="228.0" mnemonicParsing="false" onAction="#addSweet" text="Add sweet" AnchorPane.rightAnchor="10.0" />
+      <ListView fx:id="sweetsList" layoutX="329.0" layoutY="41.0" prefHeight="172.0" prefWidth="262.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="41.0" />
+      <Label layoutX="443.0" layoutY="14.0" text="Sweets" />
+      <Label layoutX="131.0" layoutY="14.0" text="Presents" />
+      <ChoiceBox fx:id="sweetTypeBox" layoutX="329.0" layoutY="327.0" prefHeight="27.0" prefWidth="167.0" />
+      <TextField fx:id="packageWidthField" layoutX="329.0" layoutY="380.0" prefHeight="27.0" prefWidth="116.0" promptText="Package width" />
+      <TextField fx:id="packageHeightField" layoutX="469.0" layoutY="380.0" prefHeight="27.0" prefWidth="116.0" promptText="Package height" />
+      <Label layoutX="509.0" layoutY="332.0" text="Sweets type" />
+      <Button layoutX="107.0" layoutY="441.0" mnemonicParsing="false" onAction="#openPresent" text="Open present" AnchorPane.bottomAnchor="14.0" />
+      <Line endX="140.0" layoutX="445.0" layoutY="266.0" startX="-115.0" />
+   </children>
+</AnchorPane>
